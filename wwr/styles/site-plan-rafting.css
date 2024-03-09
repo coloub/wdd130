@@ -6,10 +6,10 @@ body{
     padding: 20px;
 }
 :root { 
-    --primary-color: #004080;
-    --secondary-color: #336633;
-    --accent1-color: #663300;
-    --accent2-color: #FF6600; 
+    --primary-color: #666A86;
+    --secondary-color: #95B8D1;
+    --accent1-color: #E8DDB5;
+    --accent2-color: #EDAFB8; 
     
     --heading-font:'Montserrat',sans serif;
     --paragraph-font:'Roboto',sans serif;
