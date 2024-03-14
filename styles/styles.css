@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 main{
     max-width: 840px;
 }
@@ -10,13 +15,8 @@ h1 {
 }
 
 aside {
+    position: relative;
     width: 300px;
-    margin: 20px;
-    border: 2px solid #e0e0e0;
-    padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
-    border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
@@ -29,6 +29,7 @@ main img{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     width: 150px;
     height: auto;
+    float: right;
 }
 
 p{padding: 0;}
@@ -51,4 +52,19 @@ nav a {
 /**/
 nav a:hover {
     background-color: #f0f0f0;
+}
+
+/*Class Selectors*/
+
+.box{
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #f9f9f9;
+    color: #000;
+}
+aside h2{
+    position: absolute;
+    top: 11px;
+    left: 120px;
 }
