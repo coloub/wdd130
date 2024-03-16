@@ -6,16 +6,16 @@ body{
     padding: 20px;
 }
 :root { 
-    --primary-color: #666A86;
-    --secondary-color: #95B8D1;
-    --accent1-color: #E8DDB5;
-    --accent2-color: #EDAFB8; 
+    --primary-color: #4B3B47;
+    --secondary-color: #6A6262;
+    --accent1-color: #9C9990;
+    --accent2-color: #CFD2B2;  
     
     --heading-font:'Montserrat',sans serif;
     --paragraph-font:'Roboto',sans serif;
 
     --nav-background-color: var(--primary-color);
-    --nav-link-color: #FFFFFF;
+    --nav-link-color: #E0D8DE;
     --nav-hover-link-color: var(--accent2-color);
     --nav-hover-background-color: var(--secondary-color)
 }
