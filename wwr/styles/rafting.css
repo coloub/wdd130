@@ -112,6 +112,9 @@ nav a:hover {
     margin-bottom: 10px; 
 }
 
+.social-icons img{
+    width: 30px;
+}
 .social-icons a {
     display: inline-block;
     margin: 0 10px; 
