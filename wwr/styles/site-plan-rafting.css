@@ -20,7 +20,7 @@ body{
     --nav-hover-background-color: var(--secondary-color)
 }
 
-h1,h2,h3,h4 ,h5,h6{
+h1,h2,h3,h4{
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
@@ -42,7 +42,10 @@ nav a {
     text-decoration: none;
     padding: 1em;
 }
-nav a :link, nav a:visited {
+nav a:link {
+    color: var(--nav-link-color);
+}
+nav a:visited{
     color: var(--nav-link-color);
 }
 nav a:hover {
