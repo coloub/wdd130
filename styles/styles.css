@@ -3,22 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
-main{
+
+header,footer, .grid{
     max-width: 840px;
+    margin: 0;
 }
-/**/
+
 h1 {
     font-size: 32px;
     color: #000000;
     font-weight: bold;
     margin-bottom: 20px;
+    border-bottom: 2px solid #000000;
 }
-
+.grid {
+    display: grid;
+    align-items: center;
+}
+main{
+    grid-column: 2/3;
+    margin: 1rem;
+}
 aside {
     position: relative;
-    width: 300px;
+    width: 20rem;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
 }
 aside img {
     width: 200px;
@@ -40,7 +53,13 @@ footer{
     text-align: center;
 }
 
-
+nav{
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 /**/
 nav a {
     color: #333;
@@ -48,6 +67,11 @@ nav a {
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 /**/
 nav a:hover {
