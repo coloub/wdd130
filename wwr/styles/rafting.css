@@ -1,8 +1,8 @@
 :root { 
-    --primary-color: #1E3C5C;       /* Azul marino */
-    --secondary-color: #255957;     /* Verde marino */
-    --accent1-color: #548687;       /* Verde azulado */
-    --accent2-color: #7FB07F;       /* Verde oliva */
+    --primary-color: #1E3C5C;
+    --secondary-color: #255957;
+    --accent1-color: #548687;
+    --accent2-color: #7FB07F;
 
     --heading-font: 'Montserrat', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
@@ -20,7 +20,7 @@ body {
     color: var(--primary-color);
     max-width: 800px;
     margin: 0 auto;
-    background-color: #FFFFFF;  /* Fondo blanco */
+    background-color: #FFFFFF;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,7 +33,7 @@ p {
 }
 
 header {
-    background-color: var(--secondary-color);  /* Fondo verde marino para el encabezado */
+    background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
@@ -88,7 +88,7 @@ nav a:hover {
     top: 18%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    color: #fff;   /* Texto blanco para encabezado hero */
+    color: #fff;
     font-size: 2rem;
     padding: 40px;
     white-space: nowrap; 
@@ -100,8 +100,8 @@ nav a:hover {
     bottom: 200px;
     right: 20px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);   /* Fondo semi-transparente para artículo del héroe */
-    color: #fff;   /* Texto blanco para artículo del héroe */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
 }
 
 .hero article img {
@@ -145,7 +145,7 @@ section img {
 
 /*History-Section*/
 .history-section {
-    background-color: var(--accent2-color);   /* Fondo verde oliva para sección de historia */
+    background-color: var(--accent2-color);
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
