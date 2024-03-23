@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root { 
-    --primary-color: #4B3B47;
-    --secondary-color: #6A6262;
-    --accent1-color: #9C9990;
-    --accent2-color: #CFD2B2; 
-    
-    --heading-font:'Montserrat',sans serif;
-    --paragraph-font:'Roboto',sans serif;
+    --primary-color: #1E3C5C;       /* Azul marino */
+    --secondary-color: #255957;     /* Verde marino */
+    --accent1-color: #548687;       /* Verde azulado */
+    --accent2-color: #7FB07F;       /* Verde oliva */
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
 
     --nav-background-color: var(--primary-color);
     --nav-link-color: #E0D8DE;
     --nav-hover-link-color: var(--accent2-color);
-    --nav-hover-background-color: var(--secondary-color)
+    --nav-hover-background-color: var(--secondary-color);
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -20,6 +20,7 @@ body {
     color: var(--primary-color);
     max-width: 800px;
     margin: 0 auto;
+    background-color: #FFFFFF;  /* Fondo blanco */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,13 +32,14 @@ p {
     margin-bottom: 20px;
 }
 
-/* Apply CSS Grid to the header */
-header{
+header {
+    background-color: var(--secondary-color);  /* Fondo verde marino para el encabezado */
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
 }
-header img{
+
+header img {
     margin-top: 12px;
     margin-bottom: 12px;
     width: 200px;
@@ -86,12 +88,11 @@ nav a:hover {
     top: 18%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    color: #fff;
+    color: #fff;   /* Texto blanco para encabezado hero */
     font-size: 2rem;
     padding: 40px;
     white-space: nowrap; 
 }
-
 
 .hero article {
     position: absolute;
@@ -99,8 +100,8 @@ nav a:hover {
     bottom: 200px;
     right: 20px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);   /* Fondo semi-transparente para artículo del héroe */
+    color: #fff;   /* Texto blanco para artículo del héroe */
 }
 
 .hero article img {
@@ -121,9 +122,10 @@ nav a:hover {
     margin-bottom: 10px; 
 }
 
-.social-icons img{
+.social-icons img {
     width: 30px;
 }
+
 .social-icons a {
     display: inline-block;
     margin: 0 10px; 
@@ -140,9 +142,10 @@ section img {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
+
 /*History-Section*/
 .history-section {
-    background-color: var(--accent2-color);
+    background-color: var(--accent2-color);   /* Fondo verde oliva para sección de historia */
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
