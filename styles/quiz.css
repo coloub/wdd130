@@ -25,6 +25,7 @@ form div {
 }
 label {
     font-weight: bold;
+    cursor: pointer; /* Add cursor:pointer for better UX */
 }
 input[type="text"],
 textarea,
