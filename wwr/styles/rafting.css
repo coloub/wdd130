@@ -228,3 +228,58 @@ section img {
     width: 30px;
     margin-left: 10px; 
 }
+/* New Styles for Contact Page */
+
+.company-info {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.employee-profiles {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.employee {
+    text-align: center;
+}
+
+.employee img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.contact-form {
+    margin-top: 40px;
+    padding: 50px;
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
