@@ -54,12 +54,23 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
             <label for="purpose">Purpose of Message:</label>
             <select id="purpose" name="purpose">
                 <option value="general">General Inquiry</option>
                 <option value="reservation">Reservation Question</option>
                 <option value="suggestion">Website Suggestion</option>
             </select>
+            
+            <label>Preferred Contact Method:</label>
+            <input type="radio" id="contact-phone" name="contact-method" value="phone">
+            <label for="contact-phone">Phone</label>
+            <input type="radio" id="contact-email" name="contact-method" value="email">
+            <label for="contact-email">Email</label>
+            <input type="radio" id="contact-none" name="contact-method" value="none">
+            <label for="contact-none">No Preference</label>
             
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
