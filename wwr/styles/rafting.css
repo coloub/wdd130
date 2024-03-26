@@ -229,111 +229,135 @@ section img {
     margin-left: 10px; 
 }
 
-/* Contact Form */
-.contact-form {
-    margin-top: 50px;
+.contact-info {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.contact-form h2 {
-    text-align: center;
+.contact-info h1 {
+    font-size: 2.5rem;
     color: var(--secondary-color);
     margin-bottom: 20px;
 }
 
-.contact-form label {
-    display: block;
+.company-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.company-info h2 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.company-info p {
     margin-bottom: 5px;
-    color: var(--secondary-color);
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form input[type="tel"],
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius:5px;
-    box-sizing: border-box;
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    appearance: none;
+
+/* Team Section */
+.team-section {
+    text-align: center; 
+    margin-bottom: 50px;
+    display: flex; /* Convertir el contenedor en un flex container */
+    flex-direction: column; /* Apilar los elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente */
 }
 
-.contact-form input[type="radio"],
-.contact-form input[type="checkbox"] {
-    margin-right: 5px;
+.team-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
 }
 
-.contact-form button[type="submit"] {
-    padding: 10px 20px;
-    background-color: var(--accent1-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button[type="submit"]:hover {
-    background-color: var(--accent2-color);
-}
-
-/* Employee Profiles */
 .employee-profiles {
-    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Evitar que los perfiles se envuelvan a la siguiente línea */
 }
 
 .employee {
-    display: flex;
+    flex: 0 0 calc(33.33% - 20px); /* Establecer un ancho fijo para cada perfil */
     margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 20px; /* Agregar espacio entre los perfiles */
+}
+
+.employee:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último perfil */
 }
 
 .profile-img {
-    flex: 1;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .profile-img img {
     width: 100%;
-    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.employee:hover .profile-img img {
+    transform: scale(1.1);
 }
 
 .profile-info {
-    flex: 2;
-    margin-left: 20px;
+    text-align: center;
 }
 
 .profile-info h3 {
     font-size: 20px;
     margin-bottom: 5px;
+    color: var(--primary-color);
 }
 
 .profile-info p {
     margin: 5px 0;
     font-size: 16px;
+    color: var(--secondary-color);
 }
-/*Contact Form*/
+
+/*Contact*/
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+    margin-top: 50px;
     background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
 }
 
 .contact-form label {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--secondary-color);
 }
 
 .contact-form input[type="text"],
@@ -341,22 +365,28 @@ section img {
 .contact-form input[type="tel"],
 .contact-form select,
 .contact-form textarea {
-    width: calc(100% - 20px);
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .contact-form textarea {
     height: 150px;
 }
 
-.contact-form button {
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 5px; /* Add space between the button and the text */
+}
+
+.contact-form button[type="submit"] {
     width: 100%;
-    padding: 12px 24px;
-    background-color: #007bff;
+    padding: 15px;
+    background-color: var(--accent1-color);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -365,6 +395,6 @@ section img {
     transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
-    background-color: #0056b3;
+.contact-form button[type="submit"]:hover {
+    background-color: var(--accent2-color);
 }
