@@ -122,8 +122,13 @@ nav a:hover {
     margin-bottom: 10px; 
 }
 
+.social-icons{
+    display: inline-block;
+}
+
 .social-icons img {
     width: 30px;
+    margin-left: 10px;
 }
 
 .social-icons a {
@@ -134,6 +139,17 @@ nav a:hover {
 
 .social-icons a:hover {
     transform: scale(1.2); 
+}
+
+.wireframe-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.wireframe-link:hover {
+    color: var(--accent2-color);
 }
 
 section img {
